@@ -1,0 +1,74 @@
+// 1. Створити масив з 10 чисел (можна використовувати Math.random Та Math.floor). Скласти результат цих чисел в змінній result.
+
+
+// 2. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр
+
+// let book = {
+//     name: 'Code: The Hidden Language of Computer Hardware and Software',
+//     pages: 400,
+//     ganre: 'computer literature'
+// }
+
+
+// 3. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр, автори
+
+// let book = {
+//     name: 'It: A Novel',
+//     pages: 1248,
+//     ganre: 'Horror',
+//     author: 'Stephen King'
+// }
+
+
+// 4. Створити масив об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт
+
+let books = [
+    {
+        name: 'It: A Novel',
+        pages: 1248,
+        ganre: 'Horror',
+        author: 'Stephen King'
+    },
+    {
+        name: 'Code: The Hidden Language of Computer Hardware and Software',
+        pages: 400,
+        ganre: 'computer literature',
+        author: 'Charles Petzold'
+    },
+    {
+        name: 'Le comte de Monte Cristo',
+        pages: 768,
+        ganre: 'adventure, historical',
+        author: 'Alexandre Dumas'
+    }
+]
+
+console.log(books[0]);
+console.log(books[1]);
+console.log(books[2]);
+
+
+// 5. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+
+let height = 23;
+let width = 10;
+let s = height * width;
+console.log(s);
+
+
+// 6. Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC),
+// результат помістіть у змінну v.
+
+let heightC = 10;
+let dC = 4;
+let v = heightC * dC;
+console.log(v);
+
+
+// 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
+// Знайдіть гіпотенузу k за теоремою Піфагора (потрібно використовувати функцію Math.pow (число, ступінь) або оператор зведення в ступінь **).
+let n = 3;
+let m = 4;
+let k = 3 ** 2 + 4 ** 2;
+k = k ** 2;
+console.log(k);
