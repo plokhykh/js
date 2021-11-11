@@ -75,5 +75,5 @@ console.log(v);
 let n = 3;
 let m = 4;
 let k = 3 ** 2 + 4 ** 2;
-k = k ** 2;
+k = Math.sqrt(k) ;
 console.log(k);

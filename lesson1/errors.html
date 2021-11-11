@@ -17,16 +17,18 @@
     let b = 500;
     let c = "hello";
     let d = "okten";
-    let x = 'constant value';
-    let y = 500;
-
-    console.log(a);
-    x = 'new value';
+    var x = 'constant value';
+    let y = 10;
+    {
+        console.log(a);
+        x = 'new value';
+    }
     b = 'new value';
 
-    let result = 100 + y;
+    let result = a + y;
 
     console.log(result);
+
 
 </script>
 
