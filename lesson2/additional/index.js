@@ -40,7 +40,7 @@ console.log(result);
 // - Маємо будь яке число від -100 , 0 , +100 потрібно перевірити яким є число: позитивним, негативним або нулем
 // напишіть це тернарним оператором
 
-let any_number = 1;
+let any_number = -10;
 
-let type_number = any_number <= 0 ? 'Число негативне або нуль' : 'Число позитивне';
+let type_number = any_number === 0 ? 'нуль' : any_number < 0 ? "число негативне" : "число позитивне";
 console.log(type_number);
