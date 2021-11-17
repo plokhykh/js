@@ -1,4 +1,4 @@
-// - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true,
+// - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, additional3.14, 2.7, 16, true,
 // false.
 //     Вивести кожну змінну за допомогою: console.log , alert, document.write
 
@@ -9,7 +9,7 @@
 // let b = 10;
 // let c = -999;
 // let d = 123;
-// let e = 3.14;
+// let e = additional3.14;
 // let f = 2.7;
 // let g = 16;
 // let h = true;
@@ -39,7 +39,7 @@
 // com = 25;
 // a = 'okten';
 // b = -45;
-// c = 3.78;
+// c = additional3.78;
 // d = 'owu';
 // e = 1234;
 // f = true;
@@ -63,7 +63,7 @@
 // document.write(`${hello} ${owu} ${com} ${a} ${b} ${c} ${d} ${e} ${f} ${g} ${h} ${i}`);
 
 
-// - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person.
+// - Створити additional3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person.
 // (Не об'єкт)
 
 // let firstName = 'Maryna';
@@ -73,7 +73,7 @@
 // let person = `${lastName} ${firstName} ${middleName}`
 
 
-// - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
+// - За допомогою 3х різних prompt() отримати additional3 слова які являються вашими Імям, По-Батькові та роками.
 // Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
 
 // let name = prompt('What\'s your name?');

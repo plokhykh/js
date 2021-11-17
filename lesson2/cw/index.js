@@ -33,7 +33,7 @@ if (apartment_number >= 1 && apartment_number <= 20) {
 
 
 // - Ми маємо змінну x в яку користувач задає  значення,  якщо в змінну записане число, вивести 1,
-//     якщо в змінну записали стрінгу вивести 2, якщо булеве значення - 3, якщо об'єкт або масив - 3.
+//     якщо в змінну записали стрінгу вивести 2, якщо булеве значення - additional3, якщо об'єкт або масив - additional3.
 // якщо в змінну записали щось інше, спрацьовує else
 
 let x = 124;
@@ -43,7 +43,7 @@ if (typeof x === "number") {
 } else if (typeof x === "string") {
     console.log("2");
 } else if (typeof x === "boolean") {
-    console.log("3");
+    console.log("additional3");
 } else if (typeof x === "object") {
     console.log("4");
 } else {
