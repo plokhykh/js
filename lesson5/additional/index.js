@@ -57,14 +57,23 @@ console.log(newArray);
 //     [0,1,2,3,4] => [1,2,3,4,0]
 //     [0,0,1,0]   => [1,0,0,0]
 
-// let zeroInTheEnd = (array) => {
-//     for (let element of array) {
-//         if (element === 0) {
-//             array[array.length - 1] = element;
-//         }
-//     }
-//     return array
-// }
-//
-// let arr = zeroInTheEnd([1, 0, 6, 0, 3]);
-// console.log(arr);
+let zeroInTheEnd = (array) => {
+    let arrZeros = [];
+    let arrNumbers = [];
+    let i = 0;
+    let y = 0;
+    for (const value of array) {
+        if (value === 0) {
+            arrZeros[i] = value;
+            i++;
+        } else {
+            arrNumbers[y] = value;
+            y++;
+        }
+    }
+    let newArr = [...arrNumbers, ...arrZeros];
+    return newArr
+}
+
+let arr = zeroInTheEnd([0,1,2,3,4]);
+console.log(arr);
