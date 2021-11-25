@@ -77,3 +77,4 @@ let zeroInTheEnd = (array) => {
 
 let arr = zeroInTheEnd([0,1,2,3,4]);
 console.log(arr);
+arr.map
