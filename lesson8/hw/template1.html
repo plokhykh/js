@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cupiditate deleniti
+    molestias mollitia pariatur porro saepe! Dolorem eaque earum eligendi, iste maxime molestias quam vitae.
+    Dolore hic in quae sed.
+</p>
+
+<div id="rules" class="fc bp">
+    Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе. Второе правило Бойцовского
+    клуба: никогда никому не рассказывать о Бойцовском клубе. Третье правило Бойцовского клуба: в схватке
+    участвуют только двое. Четвертое правило Бойцовского клуба: не более одного поединка за один раз
+</div>
+
+<ul>
+    <li class="fc_rules rule1">Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе.</li>
+    <li class="fc_rules rule2">Второе правило Бойцовского
+        клуба: никогда никому не рассказывать о Бойцовском клубе
+    </li>
+    <li class="fc_rules rule3">Третье правило Бойцовского клуба: в схватке
+        участвуют только двое.
+    </li>
+    <li class="fc_rules rule4">Четвертое правило Бойцовского клуба: не более одного поединка за один раз</li>
+</ul>
+
+<script>
+    // -- отримує текст з параграфа з id "content"
+    let idContent = document.getElementById('content');
+    idContentText = idContent.innerText
+    console.log(idContentText);
+
+
+    // -- отримує текст з блоку з id "rules"
+    let idRules = document.getElementById('rules');
+    console.log(idRules.innerText);
+
+
+    // -- замініть текст параграфа з id 'content' на будь-який інший
+    idContent = idContent.innerText = 'qwerty';
+    console.log(idContent);
+
+
+    // -- замініть текст параграфа з id 'rules' на будь-який інший
+    idRules = idRules.innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
+    console.log(idRules);
+
+
+    // -- змініть кожному елементу колір фону на червоний
+    // -- змініть кожному елементу колір тексту на синій
+    for (const element of document.body.children) {
+        element.classList.add('bg-color');
+        element.classList.add('text-blue');
+    }
+
+
+    // -- отримати весь список класів елемента з id=rules і вивести їх в console.log
+    for (const element of document.querySelector('#rules').classList) {
+        console.log(element);
+    }
+
+
+    // -- поміняти колір тексту у всіх елементів fc_rules на червоний
+    let fcRules = document.getElementsByClassName('fc_rules');
+    for (const rule of fcRules) {
+        rule.classList.add('text-red')
+    }
+</script>
+
+
+</body>
+</html>
