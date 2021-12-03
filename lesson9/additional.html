@@ -243,13 +243,22 @@
     // Створити під кожен елемент окремий блок. В цьому блоці, під кожну властивість, та властивості внутрішніх об'єктів створити свої окремі блок.
     for (const user of usersList) {
         let wrapper = document.createElement('div');
+        let lat = document.createElement('div');
+        let lng = document.createElement('div');
+        lat.innerText = user.address.geo.lat;
+        lng.innerText = user.address.geo.lng;
         for (const item in user) {
             if (typeof user[item] === 'object') {
                 for (const key in user[item]) {
-                    let div = document.createElement('div');
-                    div.classList.add(key);
-                    div.innerText = `${key}: ${user[item][key]}`;
-                    wrapper.appendChild(div);
+
+                    if (key === 'geo') {
+                        console.log('geo');
+                    } else {
+                        let div = document.createElement('div');
+                        div.classList.add(key);
+                        div.innerText = `${key}: ${user[item][key]}`;
+                        wrapper.appendChild(div);
+                    }
                 }
             } else {
                 let div = document.createElement('div');
@@ -257,7 +266,10 @@
                 div.innerText = `${item}: ${user[item]}`;
                 wrapper.appendChild(div);
             }
+
+
             document.body.appendChild(wrapper);
+            wrapper.append(lat, lng);
         }
     }
 </script>
