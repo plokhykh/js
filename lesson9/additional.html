@@ -250,7 +250,6 @@
         for (const item in user) {
             if (typeof user[item] === 'object') {
                 for (const key in user[item]) {
-
                     if (key === 'geo') {
                         console.log('geo');
                     } else {
@@ -266,8 +265,6 @@
                 div.innerText = `${item}: ${user[item]}`;
                 wrapper.appendChild(div);
             }
-
-
             document.body.appendChild(wrapper);
             wrapper.append(lat, lng);
         }
