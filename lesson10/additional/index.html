@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div id="uniq" class="wrap text">
+    Lorem ipsum dolor sit amet.
+</div>
+
+
+
+<div id="carousel">
+    <div class="images">
+        <img src="https://i.ytimg.com/vi/1Ne1hqOXKKI/maxresdefault.jpg">
+        <img src="https://penntoday.upenn.edu/sites/default/files/2020-02/cat-behavior-social.jpg">
+        <img src="https://s36537.pcdn.co/wp-content/uploads/2017/11/A-Siamese-cat.jpg.optimal.jpg">
+    </div>
+    <div class="btn-wrapper">
+        <button class="prev">Назад</button>
+        <button class="next">Вперед</button>
+    </div>
+</div>
+
+<div class="filter">
+    <input type="checkbox" id="statusFalse" name="status" >
+    <label for="statusFalse">Пользователи со статусом false</label>
+
+    <input type="checkbox" id="ageMore29" name="age" >
+    <label for="ageMore29">Пользователи старше 29 лет</label>
+
+    <input type="checkbox" id="liveInKyiv" name="city" >
+    <label for="liveInKyiv">Пользователи проживающие в Киеве</label>
+</div>
+
+</div>
+<div class="user-list"></div>
+<script src="index.js"></script>
+</body>
+</html>
