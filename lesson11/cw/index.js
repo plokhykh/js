@@ -25,8 +25,7 @@ for (const user of users) {
     div.appendChild(button);
 
     button.onclick = function (e) {
-        let idUser = +e.target.parentElement.id;
-        let currentUser = users.find(item => item.id === idUser);
+        let currentUser = users.find(item => item.id === user.id);
         let favorites = localStorage.getItem('favorites') || [];
 
         if(favorites.length){
