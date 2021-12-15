@@ -3,8 +3,12 @@ let productsList = localStorage.getItem('products');
 productsList = JSON.parse(productsList);
 
 if (productsList) {
-    for (const product of productsList) {
-        console.log(productsList);
+    createProductList (productsList)
+}
+
+function createProductList (products){
+    for (const product of products) {
+        console.log(products);
         let div = document.createElement('div');
         let h3 = document.createElement('h3');
         let p = document.createElement('p');
@@ -20,13 +24,15 @@ if (productsList) {
         div.append(img, h3, p, btn);
 
         btn.onclick = () => {
-            productsList.forEach((item, index) => {
+            products.forEach((item, index) => {
                 if (item.id === product.id) {
-                    productsList.splice(index, 1);
+                    products.splice(index, 1);
                 }
             })
+            divList.innerText = '';
+            createProductList(products)
             localStorage.removeItem('products');
-            localStorage.setItem('products', JSON.stringify(productsList))
+            localStorage.setItem('products', JSON.stringify(products))
         }
     }
 }
