@@ -34,6 +34,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    flex: 1 0 20%;
     max-width: 250px;
     background: #D8ABAE;
     border-radius: 5px;

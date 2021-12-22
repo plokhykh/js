@@ -55,21 +55,23 @@ postBtn.onclick = () => {
     fetch(`https://jsonplaceholder.typicode.com/users/${currentUser.id}/posts`)
         .then(result => result.json())
         .then(posts => {
-            let ul = document.createElement('ul');
+            let postsDiv = document.createElement('div');
+            postsDiv.classList.add('posts-box');
             for (const post of posts) {
-                let li = document.createElement('li');
+                let div = document.createElement('div');
                 let a = document.createElement('a');
                 let h3 = document.createElement('h3');
 
                 a.href = '../post-details/post-details.html';
                 h3.innerText = post.title
 
-                document.body.appendChild(ul);
-                ul.appendChild(li);
-                li.appendChild(a)
+                postsDiv.appendChild(div);
+                div.appendChild(a);
                 a.appendChild(h3);
                 sessionStorage.setItem('post', JSON.stringify(post));
             }
+
+            document.body.appendChild(postsDiv)
         })
 }
 
